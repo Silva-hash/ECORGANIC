@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.logo img {
+    width: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    color: #4caf50;
+}
+
+.product-header {
+    display: flex;
+    align-items: center;
+    background-color: #e0e0e0;
+    padding: 20px;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product-header h1 {
+    color: #045E01;
+    font-size: 2em;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px;
+    background-color: #e0f5e0;
+}
+
+.product-card {
+    background-color: #cfe3d4;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.product-card h2 {
+    color: #045E01;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.ingresar-btn, .cart-btn {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.cart-btn img {
+    width: 20px;
+    vertical-align: middle;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-media a img {
+    width: 30px;
+    filter: invert(1);
+}
+

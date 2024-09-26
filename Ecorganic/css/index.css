@@ -1,0 +1,211 @@
+body {
+    background-image: url('../img/inicio.jpg'); /* Reemplaza con la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff; /* Opcional: para asegurar que el texto sea visible sobre el fondo */
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+}
+
+#ss {
+    text-align: left;
+    font-family: "Engravers MT";
+    font-weight: bold;
+    font-size: 50px;
+    color: #fff;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+
+#logo {
+    margin-left: 0;
+    width: 75px;
+    height: auto;
+}
+
+@media (max-width: 640px) {
+    h1 {
+        font-size: 1.25rem;
+    }
+}
+
+/* Estilos de los botones */
+.btn-home,
+.btn-buy,
+.btn-register,
+.btn-products,
+.btn-about {
+    background: linear-gradient(90deg, #32CD32, #2F4F4F);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn-home:after { content: '🏠'; }
+.btn-buy:after { content: '🛒'; }
+.btn-register:after { content: '✚'; }
+.btn-products:after { content: '📦'; }
+.btn-about:after { content: 'ℹ️'; }
+
+.btn-home:hover,
+.btn-buy:hover,
+.btn-register:hover,
+.btn-products:hover,
+.btn-about:hover {
+    transform: scale(1.05);
+    background: #007BFF;
+}
+
+.carrusel {
+    position: center;
+    width: 100%;
+    min-height: 10%; /* Ajusta según sea necesario */
+    max-width: 100%;
+    overflow: hidden;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.carrusel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    max-height: 490px; /* Ajustado a la altura de 490px */
+}
+
+.carrusel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.carrusel-item img {
+    width: 640px; /* Ajustado al ancho de 640px */
+    height: 490px; /* Ajustado a la altura de 490px */
+    display: block;
+    object-fit: cover; /* Asegura que la imagen mantenga su proporción y cubra el área */
+    margin: 0 auto; /* Centrar la imagen */
+}
+
+.carrusel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 100;
+    color: white;
+}
+
+.carousel-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    color: white;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+    text-align: center;
+}
+
+.carousel-text h1 {
+    font-size: 3rem;
+}
+
+.carousel-text p {
+    font-size: 1.5rem;
+}
+
+.product-title {
+    color: white;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-media a img {
+    width: 20px;
+    filter: invert(1);
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+#s {
+    width: 80px;
+    border-radius: 8px;
+}
+
+/* Menú móvil */
+#mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 75%;
+    height: 100%;
+    background-color: black; /* Fondo negro para el menú móvil */
+    color: white; /* Texto blanco para contraste */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+#mobile-menu.open {
+    transform: translateX(0);
+}
+
+#mobile-menu ul {
+    list-style: none;
+    padding: 20px;
+}
+
+#mobile-menu ul li {
+    margin: 20px 0;
+}
+
+#mobile-menu button {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    background: none;
+    color: white;
+    border: none;
+    font-size: 18px;
+}
+
+#mobile-menu button:hover {
+    background-color: #333;
+}

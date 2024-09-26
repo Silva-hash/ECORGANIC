@@ -1,0 +1,197 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('../img/inicio.jpg'); /* Reemplaza con la ruta de tu imagen */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff; /* Opcional: para asegurar que el texto sea visible sobre el fondo */
+}
+
+main {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.carrusel {
+  position: relative;
+  width: 100%;
+  min-height: 10%;
+  max-width: 100%;
+  overflow: hidden;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.carrusel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+  max-height: 490px; 
+}
+
+.carrusel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.carrusel-item img {
+  width: 640px; 
+  height: 490px; 
+  display: block;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.carrusel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 100;
+  color: white;
+}
+
+@font-face {
+  font-family: 'Algerian';
+  src: url('https://path-to-your-font/algerian.woff') format('woff'); /* Añade aquí la URL a la fuente si la tienes */
+}
+
+.carousel-text {
+  color: #000000;
+  font-family: "Arial Black", sans-serif;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.product-title {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: #000000;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+
+.product-card {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s;
+}
+
+.product-card img:hover {
+  transform: scale(1.05);
+}
+
+.product-card h3 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #ffffff;
+  
+}
+
+.texto-intro {
+  font-family: 'Algerian', 'Arial Black', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  color: #fcf6f6;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+
+.mission-vision {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+}
+
+.mission, .vision {
+  width: 45%;
+  text-align: center;
+  background-color: #000000; 
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 10px #ffffff,
+  0px 0px #047e2d inset;
+  border: 2px solid #50fd98;
+}
+
+.hero {
+  position: relative;
+  height: 300px;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+.hero img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto; 
+  height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover; 
+  z-index: -1;
+}
+
+.nn {
+  font-size: 1.4rem;
+  color: #ffffff;
+}
+
+.ss {
+  font-size: 2.8rem;
+  font-family: 'Times New Roman';
+  position: center;
+  color: #fff;
+  margin-left: 37%;
+}
+
+.vv {
+  width: 10px;
+}
+
+#mv {
+  display: inline-block;
+  padding: 5px; 
+  background-image: linear-gradient(to right, #0c2ad8, #f3f7f4, #9aecaf, #020857);
+  border-radius: 50%; 
+  width: 407px;
+}
+#sd{
+  color: #000;
+  background-color: #ffffff88;
+  font-size: 40px;
+  font-family: 'Times New Roman';
+}
+.text-xl{
+  font-size: 2.8rem;
+}
